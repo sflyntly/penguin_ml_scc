@@ -5,7 +5,7 @@ import pandas as pd
 import pickle
 
 st.title(':penguin: Penguin Classifier :penguin:')
-st.subheader('Machine Learning App')
+st.subheader(':snowflake: A Machine Learning App :snowflake:')
 st.write("This app uses 6 inputs to predict the species of penguin using"
          " a model built on the Palmer Penguins dataset. Use the form below"
          " to get started!")
