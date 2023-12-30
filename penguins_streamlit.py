@@ -12,7 +12,7 @@ st.write("This app uses 6 inputs to predict the species of penguin using"
          " a model built on the Palmer Penguins dataset. Use the form below"
          " to get started!")
 
-password_guess = st.text_input('Where do penguins go to dance?')
+password_guess = st.text_input(':snowball: To access this app, answer this riddle - Where do penguins go to dance? :snowball:')
 if password_guess != st.secrets["password"]:
     st.stop()
 
