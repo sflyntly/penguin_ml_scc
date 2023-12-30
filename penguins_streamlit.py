@@ -6,7 +6,8 @@ import pickle
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-st.title('Penguin Classifier')
+st.title(':penguin: Penguin Classifier :penguin:')
+st.subheader(':snowflake: A Machine Learning App :snowflake:')
 st.write("This app uses 6 inputs to predict the species of penguin using"
          " a model built on the Palmer Penguins dataset. Use the form below"
          " to get started!")
