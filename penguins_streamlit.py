@@ -19,7 +19,6 @@ lottie_penguin = load_lottieurl(
     "https://lottie.host/4ec5445a-2328-41e1-a76d-b7d6f20b8339/z19AtMMFPJ.json"
 )
 st_lottie(lottie_penguin, height=200, speed=1.5)
-st.write("Happy New Year!")
 
 st.title(':penguin: Penguin Classifier :penguin:')
 st.subheader(':snowflake: A Machine Learning App :snowflake:')
