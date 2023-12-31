@@ -3,9 +3,23 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
+import requests
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
+from streamlit_lottie import st_lottie
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_penguin = load_lottieurl(
+    "https://lottie.host/4ec5445a-2328-41e1-a76d-b7d6f20b8339/z19AtMMFPJ.json"
+)
+st_lottie(lottie_penguin, height=200, speed=1.5)
+
 st.title(':penguin: Penguin Classifier :penguin:')
 st.subheader(':snowflake: A Machine Learning App :snowflake:')
 st.write("This app uses 6 inputs to predict the species of penguin using"
