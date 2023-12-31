@@ -108,7 +108,7 @@ st.write(
     species. The vertical line represents
     your the inputted value."""
 )
-tab1, tab2, tab3 = st.tabs("Bill Length by Species","Bill Depth by Species","Flipper Length by Species")
+tab1, tab2, tab3 = st.tabs(["Bill Length by Species","Bill Depth by Species","Flipper Length by Species"])
 
 with tab1:
     fig, ax = plt.subplots()
